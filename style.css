@@ -602,8 +602,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .aspect-\[16\/6\] {
   aspect-ratio: 16 / 6;
 }
-.h-1 {
-  height: 0.25rem;
+.h-7 {
+  height: 1.75rem;
 }
 .h-\[20px\] {
   height: 20px;
@@ -613,9 +613,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-full {
   height: 100%;
-}
-.h-7 {
-  height: 1.75rem;
 }
 .h-\[25px\] {
   height: 25px;
@@ -637,9 +634,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-10 {
   height: 2.5rem;
-}
-.h-5 {
-  height: 1.25rem;
 }
 .max-h-\[770px\] {
   max-height: 770px;
@@ -753,9 +747,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-5 {
   gap: 1.25rem;
 }
-.gap-x-0 {
-  -moz-column-gap: 0px;
-       column-gap: 0px;
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 .gap-y-1 {
   row-gap: 0.25rem;
@@ -812,6 +806,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
 .bg-\[url\(\'src\/images\/pasakums\.jpg\'\)\] {
   background-image: url('src/images/pasakums.jpg');
 }
@@ -821,15 +818,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[url\(\'src\/images\/biz-kastes-fons\.svg\'\)\] {
   background-image: url('src/images/biz-kastes-fons.svg');
 }
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-gradient-45deg {
+  background-image: linear-gradient(45deg, var(--tw-gradient-stops));
+}
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+.from-color-brand-lightest {
+  --tw-gradient-from: #E9F6FF;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(233 246 255 / 0));
 }
 .from-white {
   --tw-gradient-from: #fff;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
 }
-.to-gray-100 {
-  --tw-gradient-to: #f3f4f6;
+.to-white {
+  --tw-gradient-to: #fff;
+}
+.to-neutral-1 {
+  --tw-gradient-to: #F6F8FB;
 }
 .bg-cover {
   background-size: cover;
@@ -864,6 +871,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -989,6 +999,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
+.opacity-75 {
+  opacity: 0.75;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.opacity-\[90\%\] {
+  opacity: 90%;
+}
+.opacity-95 {
+  opacity: 0.95;
+}
+.opacity-\[98\%\] {
+  opacity: 98%;
+}
+.opacity-\[97\%\] {
+  opacity: 97%;
+}
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1022,8 +1050,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-300 {
   transition-duration: 300ms;
+}
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1804,9 +1843,9 @@ button.swiper-pagination-bullet {
   --tw-bg-opacity: 1;
   background-color: rgb(0 98 188 / var(--tw-bg-opacity));
 }
-.hover\:bg-neutral-2:hover {
+.hover\:bg-neutral-3:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 242 244 / var(--tw-bg-opacity));
+  background-color: rgb(218 228 234 / var(--tw-bg-opacity));
 }
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
@@ -1841,16 +1880,16 @@ button.swiper-pagination-bullet {
     position: relative;
   }
 
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
   .sm\:h-16 {
     height: 4rem;
   }
 
   .sm\:h-\[25px\] {
     height: 25px;
-  }
-
-  .sm\:h-10 {
-    height: 2.5rem;
   }
 
   .sm\:min-h-\[350px\] {
@@ -1908,6 +1947,10 @@ button.swiper-pagination-bullet {
 
   .sm\:p-4 {
     padding: 1rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
   }
 
   .sm\:px-6 {

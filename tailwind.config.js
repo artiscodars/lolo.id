@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-45deg': 'linear-gradient(45deg, var(--tw-gradient-stops))',
+      },
       maxWidth: {
         '8xl': '96rem',
       },
