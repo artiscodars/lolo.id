@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="/src/js/swiper.js"></script>
+ </head>
+  <body>
+    <header class="bg-white sticky top-0 z-10 mb-5"  id="header">
+      <nav class="mx-auto flex items-center justify-between p-6 lg:px-8">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">LOLO</span>
+          <img class="h-8 w-auto" src="/src/images/logo.svg" alt="" />
+        </a>
+        <div class="flex">
+          
+
+            <ul class="p-0 m-0 lengmenu flex items-center">
+              <li class=" p-0 m-0 ">
+                <button type="button" class="flex font-bold uppercase text-[11px] items-center mr-6">
+                  <img src="/src/images/globe.svg" alt="Menu" class="h-[20px] mr-2" />
+                  Latviski</button>
+                <ul class="hidden shadow-md px-4 py-2 z-50 bg-white text-[11px]"> 
+                  <li><a href="#" class="text-primary hover:text-secondary font-bold uppercase py-2 block">Latviski</a></li>
+                  <li><a href="#" class="hover:text-primary text-secondary font-semibold uppercase py-2 block">In English</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+             
+
+          <button type="button" class="flex font-bold uppercase text-[11px] items-center" id="menu-opener">
+            <img src="/src/images/dots.svg" alt="Menu" class="h-[30px] mr-2" />
+            Izvēlne</button>
+        </div>
+      </nav>
+    </header>
+
+
+<div class="px-4">
+    <div class="w-full relative  mx-auto lg:max-w-8xl">
+      <div class="swiper default-carousel swiper-container">
+      <div class="swiper-wrapper pb-10">
+       <div class="swiper-slide">
+         <div class="m-auto flex-none  max-h-[770px] aspect-[2/1] rounded-lg overflow-hidden">
+          <img src="/src/images/baneris.jpg" alt="Banner 1" class="w-full h-full object-cover" />
+         </div>
+       </div>
+       <div class="swiper-slide">
+         <div class="m-auto flex-none  max-h-[770px] aspect-[2/1] rounded-lg overflow-hidden">
+          <img src="/src/images/baneris.jpg" alt="Banner 1" class="w-full h-full object-cover" />
+         </div>
+       </div>
+       <div class="swiper-slide">
+         <div class="m-auto flex-none  max-h-[770px] aspect-[2/1] rounded-lg overflow-hidden">
+          <img src="/src/images/baneris.jpg" alt="Banner 1" class="w-full h-full object-cover" />
+         </div>
+       </div>
+      </div>
+      <div class="flex items-center gap-8 lg:justify-start justify-center">
+       <button id="slider-button-left" class="swiper-button-prev " data-carousel-prev></button>
+       <button id="slider-button-right" class="swiper-button-next" data-carousel-next></button>
+      </div>
+      <div class="swiper-pagination"></div>
+      </div>
+      </div>
+
+    </div>
+
+
+    <!-- filter -->
+<div class="px-4 pt-5 sm:pt-10">
+    <div
+      class="mx-auto lg:max-w-8xl flex flex-wrap justify-between items-center"
+    >
+      <div>
+        <div class="flex flex-wrap sm:flex-1 justify-center sm:justify-start gap-x-0 gap-y-1 uppercase text-[11px] sm:text-sm">
+          <a
+            href="#"
+            class="block text-center text-white bg-primary font-bold py-2 px-4 rounded-full hover:bg-primary-darker"
+          >
+            Visi pasākumi</a
+          >
+
+          <a
+            href="#"
+            class="block text-center text-secondary bg-white font-bold py-2 px-4 rounded-full hover:bg-neutral-2"
+          >
+            Sports</a
+          >
+
+          <a
+            href="#"
+            class="block text-center text-secondary bg-white font-bold py-2 px-4 rounded-full hover:bg-neutral-2"
+          >
+            Kultūra</a
+          >
+
+          <a
+            href="#"
+            class="block text-center text-secondary bg-white font-bold py-2 px-4 rounded-full hover:bg-neutral-2"
+          >
+            Bizness</a
+          >
+        </div>
+      </div>
+      <div class="flex pt-5 sm:pt-0 sm:justify-end flex-wrap justify-center w-full sm:w-auto">
+        <a href="#" class="block">
+          <img
+            src="/src/images/search.svg"
+            alt="calendar"
+            class="h-7 w-7 inline-block mr-4"
+          />
+        </a>
+        <a href="#" class="block"></a>
+          <img
+            src="/src/images/calendar-filter.svg"
+            alt="calendar"
+            class="h-7 w-7 inline-block"
+          />
+        </a>
+      </div>
+    </div>
+</div>
+    <!-- filter end -->
+
+    <!--pasakumi-->
+
+    <div class="bg-white pb-10 px-4 py-10">
+      <div class="mx-auto lg:max-w-8xl">
+        <div
+          class="grid grid-cols-2 gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-10"
+        >
+          <!--pasakuma box-->
+
+          <div class="relative cursor-pointer">
+            <div
+              class="relative aspect-[9/12] w-full rounded-lg bg-[url('/src/images/pasakums.jpg')] bg-cover"
+            >
+              <div
+                class="absolute bottom-2 right-2  rounded-full bg-primary text-white text-xl w-auto inline-block px-3 font-bold"
+              >
+                12.00 €
+              </div>
+            </div>
+            <div class="relative mt-4">
+              <h3 class="font-bold leading-none text-gray-900 pb-3">
+                FS JELGAVA mājas spēļu 2024. gada sezonas abonements
+              </h3>
+              <div
+                class="flex flex-wrap text-sm font-bold text-primary gap-1 -ml-[3px]"
+              >
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/calendar.svg"
+                    alt="date"
+                    class="h-[25px]"
+                  />17. Sep, 2024
+                </div>
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/clock.svg"
+                    alt="time"
+                    class="h-[25px]"
+                  />10:00 - 16:00
+                </div>
+
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/marker.svg"
+                    alt="location"
+                    class="h-[25px]"
+                  />Zemgales priekšpilsēta, Rīga
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--pasakuma box-->
+
+          <!--pasakuma box-->
+
+          <div class="relative cursor-pointer">
+            <div
+              class="relative aspect-[9/12] w-full rounded-lg bg-[url('/src/images/pasakums.jpg')] bg-cover"
+            >
+              <div
+                class="absolute bottom-2 right-2  rounded-full bg-primary text-white text-xl w-auto inline-block px-3 font-bold"
+              >
+                12.00 €
+              </div>
+            </div>
+            <div class="relative mt-4">
+              <h3 class="font-bold leading-none text-gray-900 pb-3">
+                FS JELGAVA mājas spēļu 2024. gada sezonas abonements
+              </h3>
+              <div
+                class="flex flex-wrap text-sm font-bold text-primary gap-1 -ml-[3px]"
+              >
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/calendar.svg"
+                    alt="date"
+                    class="h-[25px]"
+                  />17. Sep, 2024
+                </div>
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/clock.svg"
+                    alt="time"
+                    class="h-[25px]"
+                  />10:00 - 16:00
+                </div>
+
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/marker.svg"
+                    alt="location"
+                    class="h-[25px]"
+                  />Zemgales priekšpilsēta, Rīga
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--pasakuma box-->
+
+          <!--pasakuma box-->
+
+          <div class="relative cursor-pointer">
+            <div
+              class="relative aspect-[9/12] w-full rounded-lg bg-[url('/src/images/pasakums.jpg')] bg-cover"
+            >
+              <div
+                class="absolute bottom-2 right-2  rounded-full bg-primary text-white text-xl w-auto inline-block px-3 font-bold"
+              >
+                12.00 €
+              </div>
+            </div>
+            <div class="relative mt-4">
+              <h3 class="font-bold leading-none text-gray-900 pb-3">
+                FS JELGAVA mājas spēļu 2024. gada sezonas abonements
+              </h3>
+              <div
+                class="flex flex-wrap text-sm font-bold text-primary gap-1 -ml-[3px]"
+              >
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/calendar.svg"
+                    alt="date"
+                    class="h-[25px]"
+                  />17. Sep, 2024
+                </div>
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/clock.svg"
+                    alt="time"
+                    class="h-[25px]"
+                  />10:00 - 16:00
+                </div>
+
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/marker.svg"
+                    alt="location"
+                    class="h-[25px]"
+                  />Zemgales priekšpilsēta, Rīga
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--pasakuma box-->
+
+          <!--pasakuma box-->
+
+          <div class="relative cursor-pointer">
+            <div
+              class="relative aspect-[9/12] w-full rounded-lg bg-[url('/src/images/pasakums.jpg')] bg-cover"
+            >
+              <div
+                class="absolute bottom-2 right-2  rounded-full bg-primary text-white text-xl w-auto inline-block px-3 font-bold"
+              >
+                12.00 €
+              </div>
+            </div>
+            <div class="relative mt-4">
+              <h3 class="font-bold leading-none text-gray-900 pb-3">
+                FS JELGAVA mājas spēļu 2024. gada sezonas abonements
+              </h3>
+              <div
+                class="flex flex-wrap text-sm font-bold text-primary gap-1 -ml-[3px]"
+              >
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/calendar.svg"
+                    alt="date"
+                    class="h-[25px]"
+                  />17. Sep, 2024
+                </div>
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/clock.svg"
+                    alt="time"
+                    class="h-[25px]"
+                  />10:00 - 16:00
+                </div>
+
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/marker.svg"
+                    alt="location"
+                    class="h-[25px]"
+                  />Zemgales priekšpilsēta, Rīga
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--pasakuma box-->
+
+          <!--pasakuma box-->
+
+          <div class="relative cursor-pointer">
+            <div
+              class="relative aspect-[9/12] w-full rounded-lg bg-[url('/src/images/pasakums.jpg')] bg-cover"
+            >
+              <div
+                class="absolute bottom-2 right-2  rounded-full bg-primary text-white text-xl w-auto inline-block px-3 font-bold"
+              >
+                12.00 €
+              </div>
+            </div>
+            <div class="relative mt-4">
+              <h3 class="font-bold leading-none text-gray-900 pb-3">
+                FS JELGAVA mājas spēļu 2024. gada sezonas abonements
+              </h3>
+              <div
+                class="flex flex-wrap text-sm font-bold text-primary gap-1 -ml-[3px]"
+              >
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/calendar.svg"
+                    alt="date"
+                    class="h-[25px]"
+                  />17. Sep, 2024
+                </div>
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/clock.svg"
+                    alt="time"
+                    class="h-[25px]"
+                  />10:00 - 16:00
+                </div>
+
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/marker.svg"
+                    alt="location"
+                    class="h-[25px]"
+                  />Zemgales priekšpilsēta, Rīga
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--pasakuma box-->
+
+          <!--pasakuma box-->
+
+          <div class="relative cursor-pointer">
+            <div
+              class="relative aspect-[9/12] w-full rounded-lg bg-[url('/src/images/pasakums.jpg')] bg-cover"
+            >
+              <div
+                class="absolute bottom-2 right-2  rounded-full bg-primary text-white text-xl w-auto inline-block px-3 font-bold"
+              >
+                12.00 €
+              </div>
+            </div>
+            <div class="relative mt-4">
+              <h3 class="font-bold leading-none text-gray-900 pb-3">
+                FS JELGAVA mājas spēļu 2024. gada sezonas abonements
+              </h3>
+              <div
+                class="flex flex-wrap text-sm font-bold text-primary gap-1 -ml-[3px]"
+              >
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/calendar.svg"
+                    alt="date"
+                    class="h-[25px]"
+                  />17. Sep, 2024
+                </div>
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/clock.svg"
+                    alt="time"
+                    class="h-[25px]"
+                  />10:00 - 16:00
+                </div>
+
+                <div class="flex leading-none items-center">
+                  <img
+                    src="/src/images/marker.svg"
+                    alt="location"
+                    class="h-[25px]"
+                  />Zemgales priekšpilsēta, Rīga
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--pasakuma box-->
+          
+        </div>
+      </div>
+
+      <!-- load more -->
+
+      <div class="flex justify-center mt-16">
+        <button
+          type="button"
+          class="inline-flex items-center px-10 py-3 text-lg uppercase border border-transparent text-sm font-medium rounded-full text-white bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+        >
+          Ielādēt vairāk
+        </button>
+      </div>
+
+      <!-- load more end -->
+    </div>
+
+    <!--pasakumi end-->
+
+    <!-- pakalpojumi un abonementi -->
+
+    <div class="bg-white py-10 px-4">
+      <div class="mx-auto lg:max-w-5xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Banner 1 -->
+          <div
+            class="bg-[url('/src/images/kastes-fons.svg')] bg-cover w-full aspect-video rounded-xl relative overflow-hidden text-lg cursor-pointer"
+          >
+            <div
+              class="absolute w-1/2 absolute aspect-square left-0 bottom-0 overflow-hidden"
+            >
+              <img
+                src="/src/images/skrienosais.png"
+                alt="Soma"
+                class="w-full h-auto"
+              />
+            </div>
+            <div
+              class="absolute right-0 top-0 p-5 sm:p-4 md:p-6 lg:p-5  text-white text-[6vw] sm:text-2xl md:text-3xl lg:text-3xl leading-normal uppercase text-right font-bold"
+            >
+              Pakalpojumu<br />
+              rezervācija
+            </div>
+          </div>
+          <!-- Banner 2 -->
+          <div
+            class="bg-[url('/src/images/kastes-fons.svg')] bg-cover w-full aspect-video rounded-xl relative overflow-hidden text-lg cursor-pointer"
+          >
+            <div
+              class="absolute w-1/2 absolute aspect-square left-0 bottom-0 overflow-hidden"
+            >
+              <img
+                src="/src/images/soma.png"
+                alt="Soma"
+                class="w-full h-auto"
+              />
+            </div>
+            <div
+              class="absolute right-0 top-0 p-5 sm:p-4 md:p-6 lg:p-5  text-white text-[6vw] sm:text-2xl md:text-3xl lg:text-3xl leading-normal uppercase text-right font-bold"
+            >
+              Abonementu<br />
+              iegāde
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pakalpojumi un abonementi END -->
+
+    <!-- CTA -->
+
+    <div class="bg-white py-10 px-4">
+
+
+
+      <div class="mx-auto max-w-3xl pl-[150px] sm:pl-[100px] relative">
+        <img src="/src/images/skrienosais.png" class="w-[130px] sm:w-[100px] absolute left-0" />
+        
+        <div class="flex flex-wrap items-end gap-3 mb-3">
+          <span class="leading-none  text-3xl italic"
+          >tava</span
+        >
+          <img
+            src="/src/images/logo.svg"
+            alt="LOLO"
+            class="h-12"
+          />
+          <span class="leading-none  text-3xl italic"
+            >aplikācija</span
+          >
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-start sm:justify-center items-center mb-6 gap-3">
+          <span class=" text-3xl italic text-primary self-start">bazmaksas</span>
+          <a href="#" class="self-start"
+            ><img src="/src/images/app-store.svg" alt="Apple Store" class=" h-[50px]"
+          /></a>
+          <a href="#" class="self-start"
+            ><img src="/src/images/google-play.svg" alt="Google Play" class="h-12"
+          /></a>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- CTA END -->
+
+    <!-- for companies -->
+
+    <div
+      class="bg-[#0077E4] bg-[url('/src/images/biz-kastes-fons.svg')] bg-contain bg-no-repeat bg-bottom mt-10 relative overflow-hidden px-4"
+    >
+      <div
+        class="mx-auto max-w-5xl   min-h-0 sm:min-h-[350px] md:min-h-[400px] xl:min-h-[450px] grid grid-cols-1 sm:grid-cols-2"
+      >
+        <div class="grid grid-col-1 gap-10">
+          <div class="relative pt-10">
+            <h2 class="flex items-end mb-5">
+              <img
+                src="/src/images/logo-white.svg"
+                alt="LOLO"
+                class="h-12 mr-2"
+              />
+              <span class="leading-none text-white text-3xl italic"
+                >uzņēmumiem</span
+              >
+            </h2>
+
+            <button
+              class="relative pl-[40px] pr-5 text-white h-[35px] bg-slate-700 rounded-full uppercase font-bold"
+            >
+              <img
+                src="/src/images/user.svg"
+                alt="Ienākt"
+                class="h-full absolute left-[6px] top-0 w-[24px]"
+              />Ienākt
+            </button>
+          </div>
+          <div class="self-end text-white text-2xl leading-none pb-10 z-10">
+            <a class="p-2 flex font-bold mb-3" href="mailto:hello@lolo.id">
+              <img
+                src="/src/images/envelope.svg"
+                alt="email"
+                class="h-[25px] mr-3"
+              />
+              hello@lolo.id
+            </a>
+            <a class="p-2 flex font-bold" href="tel:+371 277 480 60">
+              <img
+                src="/src/images/phone.svg"
+                alt="phone"
+                class="h-[25px] mr-3"
+              />
+              +371 277 480 60
+            </a>
+          </div>
+        </div>
+        <div
+          class="absolute right-0 w-2/3 sm:w-full aspect-auto bottom-0 sm:relative"
+        >
+          <div
+            class="absolute w-full right-0 bottom-0 aspect-square translate-y-[40%] z-0"
+          >
+            <img
+              src="/src/images/ar-laptopu.png"
+              alt="Uzņēmējs"
+              class="h-full"
+            />
+          </div>
+        </div>
+        <!-- Content for companies goes here -->
+      </div>
+    </div>
+
+    <!-- for companies END -->
+
+    <!-- partners -->
+
+    <div class="bg-white py-20">
+      <div class="flex flex-wrap justify-center  gap-10 mx-auto max-w-5xl"> 
+        <div class="h-8 sm:h-16 aspect-[16/6] flex items-center">
+          <img src="/src/images/tonybet.png.webp" />
+        </div>
+        <div class="h-8 sm:h-16   aspect-[16/6] flex items-center">
+          <img src="/src/images/l-1.png" />
+        </div>
+     
+        <div class="h-8 sm:h-16  aspect-[16/6] flex items-center">
+          <img src="/src/images/l-3.png" />
+        </div>
+       
+        <div class="h-8 sm:h-16  aspect-[16/6] flex items-center">
+          <img src="/src/images/l-2.png" />
+        </div>
+        <div class="h-8 sm:h-16  aspect-[16/6] flex items-center">
+          <img src="/src/images/l-4.png" />
+        </div>
+        <div class="h-8 sm:h-16   aspect-[16/6] flex items-center">
+          <img src="/src/images/tonybet.png.webp" />
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- partners END -->
+
+    <!-- footer -->
+
+    <footer>
+      <div class="bg-gradient-to-b from-white to-gray-100 w-full py-10">
+        <div class="container mx-auto px-4">
+          <!-- Row 1: Logo -->
+          <div class="flex justify-center mb-6">
+            <img src="/src/images/logo.svg" alt="Logo" class="h-12" />
+          </div>
+          <!-- Row 2: Address -->
+          <div class="flex justify-center mb-6">
+            <address class="not-italic text-center">
+              SIA LOLO, Baldones 5-1, Rīga, LV 1007
+            </address>
+          </div>
+          <!-- Row 3: Apple and Google Play Buttons -->
+          <div class="flex justify-center mb-6 space-x-4">
+            <a href="#"
+              ><img src="/src/images/app-store.svg" alt="Apple Store" class="h-10"
+            /></a>
+            <a href="#"
+              ><img src="/src/images/google-play.svg" alt="Google Play" class="h-10"
+            /></a>
+          </div>
+          <!-- Row 4: List of 4 Links -->
+          <div class="flex flex-wrap justify-center mb-6 gap-5">
+            <a href="#" class="text-primary underline"> Uzņēmumiem </a>
+            <a href="#" class="text-primary underline">Privātuma politika</a>
+            <a href="#" class="text-primary underline">Lietošanas noteikumi</a>
+            <a href="#" class="text-primary underline">App Privacy Details</a>
+          </div>
+          <!-- Row 5: Facebook and LinkedIn Icons -->
+          <div class="flex justify-center space-x-4">
+            <a href="#"
+              ><img src="/src/images/fb.svg" alt="Facebook" class="h-8"
+            /></a>
+            <a href="#"
+              ><img src="/src/images/ln.svg" alt="LinkedIn" class="h-8"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 bg-white rounded-lg py-10 text-center"
+      >
+        <img
+          src="/src/images/LIAA.png"
+          class="w-[400px] max-w-[100%] block-inline m-auto"
+        />
+        <div class="text-sm">
+          SIA “Lolo” ir noslēdzis 06.12.2022 līgumu Nr.SKV-L-2022/568 ar
+          Latvijas Investīciju un attīstības aģentūru par atbalsta saņemšanu
+          pasākuma “Starptautiskās konkurētspējas veicināšana” ietvaros, ko
+          līdzfinansē Eiropas Reģionālās attīstības fonds.
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer END -->
+
+
+   
+
+
+<!-- menu -->
+
+<div id="menu" class="bg-white fixed top-0 left-0 right-0 bottom-0 z-50 transform -translate-y-full transition-transform duration-300 ease-in-out p-5 md:p-10">
+
+  <div class="flex justify-between items-center ">
+    <a href="#" class="-m-1.5 p-1.5">
+      <span class="sr-only">LOLO</span>
+      <img class="h-8 w-auto" src="/src/images/logo.svg" alt="" />
+    </a>
+    
+    <button type="button" class="flex font-bold uppercase text-[11px] items-center" id="menu-close">
+      <img src="/src/images/close.svg" alt="Close" class="h-[30px] mr-3" />
+    </button>
+  </div>
+
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full mx-auto lg:max-w-8xl p-5 md:p-10">
+    <div class="grid grid-cols-1 gap-3 sm:gap-6 pb-10 sm:pb-20">
+    
+      <a href="#" class="block text-secondary hover:text-primary text-2xl sm:text-4xl font-bold">
+        Pasākumi</a>
+        <a href="#" class="block text-secondary hover:text-primary  text-2xl sm:text-4xl font-bold">
+          Pakalpojumi</a>
+         <a href="#" class="block text-secondary hover:text-primary  text-2xl sm:text-4xl font-bold">
+          Abonementi</a>
+    </div> 
+   
+    
+
+    
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+        <div class="relative">
+          <h2 class="flex items-end mb-5">
+            <img
+              src="/src/images/logo.svg"
+              alt="LOLO"
+              class="h-12 mr-2"
+            />
+            <span class="leading-none text-secondary text-2xl sm:text-3xl italic font-bold"
+              >uzņēmumiem</span
+            >
+          </h2>
+
+          <button
+            class="relative pl-[40px] pr-5 text-white h-[35px] bg-slate-700 rounded-full uppercase font-bold"
+          >
+            <img
+              src="/src/images/user.svg"
+              alt="Ienākt"
+              class="h-full absolute left-[6px] top-0 w-[24px]"
+            />Ienākt
+          </button>
+        </div>
+        <div class="self-end  text-lg sm:text-xl leading-none pb-3 sm:pb-10 pt-5">
+          <a class="p-2 flex font-bold mb-3 text-primary hover:text-secondary" href="mailto:hello@lolo.id">
+            <img
+              src="/src/images/envelope-b.svg"
+              alt="email"
+              class="h-[20px] sm:h-[25px] mr-3"
+            />
+            hello@lolo.id
+          </a>
+          <a class="p-2 flex font-bold text-primary hover:text-secondary" href="tel:+371 277 480 60">
+            <img
+              src="/src/images/phone-b.svg"
+              alt="phone"
+              class="h-[20px] sm:h-[25px] mr-3"
+            />
+            +371 277 480 60
+          </a>
+        </div>
+        <div class="pt-0 sm:pt-5 grid grid-cols-1 gap-3">
+          <a href="#" class="block text-primary hover:text-secondary font-bold">
+            Par LOLO</a>
+            <a href="#" class="block text-primary hover:text-secondary font-bold">
+              Kontakti</a>
+              <a href="#" class="block text-primary hover:text-secondary font-bold">Privātuma politika</a> 
+              <a href="#" class="block text-primary hover:text-secondary font-bold">Sīkdatņu politika</a>
+        </div>
+      </div>
+      
+ 
+
+  
+        
+       	
+  </div>
+
+  <div class="absolute bottom-0 left-0 right-0">
+    <img src="/src/images/lolo-bg.svg" alt="lolo" class="w-full h-auto" />
+  </div>
+
+</div>
+
+
+
+
+<!-- menu END -->
+
+
+
+
+
+  </body>
+
+ 
+
+<script>
+  var swiper = new Swiper(".default-carousel", {
+  loop: true,
+  pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+  },
+  navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev",
+  },
+  });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    const shadowClass = 'shadow-md'; // Tailwind shadow class
+
+    function toggleShadow() {
+      if (window.scrollY > 0) {
+        header.classList.add(shadowClass);
+      } else {
+        header.classList.remove(shadowClass);
+      }
+    }
+
+    // Initial check in case the page is loaded scrolled
+    toggleShadow();
+
+    // Listen to scroll events
+    window.addEventListener('scroll', toggleShadow);
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuOpener = document.getElementById('menu-opener');
+    menuOpener.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.toggle('active');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.getElementById('menu-close');
+    menu.addEventListener('click', function (e) {
+      e.preventDefault();
+        document.body.classList.remove('active');
+    
+    });
+  });
+</script>
+  
+</html>
