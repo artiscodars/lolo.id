@@ -76,12 +76,12 @@
       class="mx-auto lg:max-w-8xl flex flex-wrap justify-between items-center"
     >
       <div>
-        <div class="flex flex-wrap sm:flex-1 justify-center sm:justify-start gap-x-1 gap-y-1 uppercase text-[11px] sm:text-sm">
+        <div class="flex flex-wrap sm:flex-1 justify-center sm:justify-start gap-x-1 gap-y-1 uppercase text-sm">
           <a
             href="#"
             class="block text-center text-white bg-primary font-bold py-2 px-4 rounded-full hover:bg-primary-darker"
           >
-            Visi pasākumi</a
+            Visi</a
           >
 
           <a
@@ -106,15 +106,19 @@
           >
         </div>
       </div>
-      <div class="flex pt-5 sm:pt-0 sm:justify-end flex-wrap justify-center w-full sm:w-auto">
-        <a href="#" class="block">
-          <img
+      <div class="flex pt-5 sm:pt-0 sm:justify-end flex-wrap items-center justify-center w-full sm:w-auto">
+        <div class="relative flex-1">
+          <input type="text" name="account-number" id="account-number" class="block w-full rounded-full border border-1 border-slate-300 pl-4 py-1.5 pr-10 text-gray-900 focus:outline-none focus:ring focus:ring-color-brand-lightest   placeholder:text-gray-400  sm:text-sm sm:leading-6" placeholder="Meklēt...">
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+            
+            <img
             src="src/images/search.svg"
             alt="calendar"
-            class="h-7 w-7 inline-block mr-4"
+            class="h-5 w-5 inline-block"
           />
-        </a>
-        <a href="#" class="block"></a>
+          </div>
+        </div>
+        <a href="#" class="block ml-3"></a>
           <img
             src="src/images/calendar-filter.svg"
             alt="calendar"
