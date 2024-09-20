@@ -602,8 +602,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .aspect-\[16\/6\] {
   aspect-ratio: 16 / 6;
 }
-.h-8 {
-  height: 2rem;
+.h-1 {
+  height: 0.25rem;
 }
 .h-\[20px\] {
   height: 20px;
@@ -632,8 +632,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[35px\] {
   height: 35px;
 }
+.h-8 {
+  height: 2rem;
+}
 .h-10 {
   height: 2.5rem;
+}
+.h-5 {
+  height: 1.25rem;
 }
 .max-h-\[770px\] {
   max-height: 770px;
@@ -668,20 +674,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-3xl {
   max-width: 48rem;
 }
-.max-w-8xl {
-  max-width: 96rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 .max-w-\[100\%\] {
   max-width: 100%;
-}
-.max-w-6xl {
-  max-width: 72rem;
-}
-.max-w-7xl {
-  max-width: 80rem;
-}
-.max-w-5xl {
-  max-width: 64rem;
 }
 .flex-none {
   flex: none;
@@ -815,14 +812,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/src\/images\/pasakums\.jpg\'\)\] {
-  background-image: url('/src/images/pasakums.jpg');
+.bg-\[url\(\'src\/images\/pasakums\.jpg\'\)\] {
+  background-image: url('src/images/pasakums.jpg');
 }
-.bg-\[url\(\'\/src\/images\/kastes-fons\.svg\'\)\] {
-  background-image: url('/src/images/kastes-fons.svg');
+.bg-\[url\(\'src\/images\/kastes-fons\.svg\'\)\] {
+  background-image: url('src/images/kastes-fons.svg');
 }
-.bg-\[url\(\'\/src\/images\/biz-kastes-fons\.svg\'\)\] {
-  background-image: url('/src/images/biz-kastes-fons.svg');
+.bg-\[url\(\'src\/images\/biz-kastes-fons\.svg\'\)\] {
+  background-image: url('src/images/biz-kastes-fons.svg');
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -991,9 +988,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-.underline {
-  text-decoration-line: underline;
 }
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -1855,6 +1849,10 @@ button.swiper-pagination-bullet {
     height: 25px;
   }
 
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
   .sm\:min-h-\[350px\] {
     min-height: 350px;
   }
@@ -1995,20 +1993,8 @@ button.swiper-pagination-bullet {
     max-width: 96rem;
   }
 
-  .lg\:max-w-6xl {
-    max-width: 72rem;
-  }
-
   .lg\:max-w-5xl {
     max-width: 64rem;
-  }
-
-  .lg\:max-w-4xl {
-    max-width: 56rem;
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-6 {
@@ -2019,18 +2005,6 @@ button.swiper-pagination-bullet {
     justify-content: flex-start;
   }
 
-  .lg\:p-8 {
-    padding: 2rem;
-  }
-
-  .lg\:p-6 {
-    padding: 1.5rem;
-  }
-
-  .lg\:p-7 {
-    padding: 1.75rem;
-  }
-
   .lg\:p-5 {
     padding: 1.25rem;
   }
@@ -2038,11 +2012,6 @@ button.swiper-pagination-bullet {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:text-3xl {
@@ -2059,9 +2028,5 @@ button.swiper-pagination-bullet {
   .xl\:gap-x-10 {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
-  }
-
-  .xl\:p-10 {
-    padding: 2.5rem;
   }
 }
