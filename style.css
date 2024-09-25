@@ -2064,6 +2064,10 @@ button.swiper-pagination-bullet {
     height: 72px;
   }
 
+  .sm\:h-8 {
+    height: 40px;
+  }
+
   .sm\:min-h-\[350px\] {
     min-height: 350px;
   }
