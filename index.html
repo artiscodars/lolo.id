@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-new">
 
 <head>
    <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
    <script src="src/js/swiper.js"></script>
 </head>
 
-<body class="bg-gradient-to-br from-color-brand-lightest to-white">
+<body class="bg-gradient-to-br from-brand-lightest to-white">
    <header class="sticky top-0 z-10 mb-5" id="header">
       <div class="absolute top-0 left-0 right-0 bottom-0 z-0 transition-all duration-500 ease-in-out" id="navbg"></div>
       <nav class="mx-auto flex items-center justify-between p-4 sm:p-6 lg:px-8 z-1 relative">
@@ -74,7 +74,7 @@
       </div>
    </div>
    <!-- filter -->
-   <div class="px-4 pt-5 sm:pt-10">
+   <div class="px-4 pt-5 sm:pt-8">
       <div class="mx-auto lg:max-w-8xl flex flex-wrap justify-between items-center">
          <div>
             <div class="flex flex-wrap sm:flex-1 justify-center sm:justify-start gap-x-1 gap-y-1 uppercase text-sm">
@@ -94,7 +94,7 @@
          <div class="flex pt-5 sm:pt-0 sm:justify-end flex-wrap items-center justify-center w-full sm:w-auto">
             <div class="relative flex-1">
                <input type="text" name="account-number" id="account-number"
-                  class="block w-full rounded-full border border-1 border-slate-300 pl-4 py-1.5 pr-10 text-gray-900 focus:outline-none focus:ring focus:ring-color-brand-lightest   placeholder:text-gray-400  sm:text-sm sm:leading-6"
+                  class="block w-full rounded-full border border-1 border-slate-300 pl-4 py-1.5 pr-10 text-gray-900 focus:outline-none focus:ring focus:ring-brand-lightest   placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   placeholder="Meklēt...">
                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
                   <img src="src/images/search.svg" alt="calendar" class="h-5 w-5 inline-block" />
@@ -108,13 +108,13 @@
    </div>
    <!-- filter end -->
    <!--pasakumi-->
-   <div class=" pb-10 px-4 py-10">
+   <div class="px-4 py-8">
       <div class="mx-auto lg:max-w-8xl">
          <div
-            class="grid grid-cols-2 gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-10">
+            class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-10">
             <!--pasakuma box-->
             <div class="relative cursor-pointer">
-               <div class="relative aspect-[9/12] w-full rounded-lg bg-[url('src/images/pasakums.jpg')] bg-cover">
+               <div class="relative aspect-[3/4] w-full rounded-lg bg-[url('src/images/pasakums.jpg')] bg-cover">
 
                   <div
                      class="flex absolute -bottom-2 left-1/2 -translate-x-[50%] rounded-full bg-primary text-white text-lg w-auto px-3 font-semibold">
@@ -314,7 +314,7 @@
          </div>
       </div>
       <!-- load more -->
-      <div class="flex justify-center mt-16">
+      <div class="flex justify-center mt-10">
          <button type="button"
             class="inline-flex items-center px-10 py-3 text-lg uppercase border border-transparent text-sm font-medium rounded-full text-white bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500">
             Ielādēt vairāk
@@ -329,8 +329,8 @@
          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <!-- Banner 1 -->
             <div
-               class="bg-[url('src/images/kastes-fons.svg')] bg-cover w-full aspect-video rounded-xl relative overflow-hidden text-lg cursor-pointer">
-               <div class="absolute w-1/2 absolute aspect-square left-0 bottom-0 overflow-hidden">
+               class="bg-[url('src/images/kastes-fons.svg')] bg-cover w-full aspect-[16/9] rounded-xl relative overflow-hidden text-lg cursor-pointer">
+               <div class="absolute w-1/2 absolute aspect-1 left-0 bottom-0 overflow-hidden">
                   <img src="src/images/skrienosais.png" alt="Soma" class="w-full h-auto" />
                </div>
                <div
@@ -341,8 +341,8 @@
             </div>
             <!-- Banner 2 -->
             <div
-               class="bg-[url('src/images/kastes-fons.svg')] bg-cover w-full aspect-video rounded-xl relative overflow-hidden text-lg cursor-pointer">
-               <div class="absolute w-1/2 absolute aspect-square left-0 bottom-0 overflow-hidden">
+               class="bg-[url('src/images/kastes-fons.svg')] bg-cover w-full aspect-[16/9] rounded-xl relative overflow-hidden text-lg cursor-pointer">
+               <div class="absolute w-1/2 absolute aspect-1 left-0 bottom-0 overflow-hidden">
                   <img src="src/images/soma.png" alt="Soma" class="w-full h-auto" />
                </div>
                <div
@@ -356,19 +356,20 @@
    </div>
    <!-- pakalpojumi un abonementi END -->
    <!-- CTA -->
-   <div class=" py-10 px-4">
+   <div class="py-8 px-4">
       <div class="mx-auto max-w-3xl pl-[150px] sm:pl-[100px] relative">
          <img src="src/images/skrienosais.png" class="w-[130px] sm:w-[100px] absolute left-0" />
          <div class="flex flex-wrap items-end gap-3 mb-3">
             <span class="leading-none  text-3xl ">tava</span>
-            <img src="src/images/logo.svg" alt="LOLO" class="h-12" />
+            <img src="src/images/logo.svg" alt="LOLO" class="h-9" />
             <span class="leading-none  text-3xl ">aplikācija</span>
          </div>
          <div class="flex flex-col sm:flex-row justify-start sm:justify-center items-center mb-6 gap-3">
             <span class=" text-3xl  text-primary self-start">bezmaksas</span>
             <a href="#" class="self-start"><img src="src/images/app-store.svg" alt="Apple Store"
                   class=" h-[50px]" /></a>
-            <a href="#" class="self-start"><img src="src/images/google-play.svg" alt="Google Play" class="h-12" /></a>
+            <a href="#" class="self-start"><img src="src/images/google-play.svg" alt="Google Play"
+                  class="h-[50px]" /></a>
          </div>
       </div>
    </div>
@@ -381,7 +382,7 @@
          <div class="grid grid-col-1 gap-10">
             <div class="relative pt-10">
                <h2 class="flex items-end mb-5">
-                  <img src="src/images/logo-white.svg" alt="LOLO" class="h-12 mr-2" />
+                  <img src="src/images/logo-white.svg" alt="LOLO" class="h-9 mr-2" />
                   <span class="leading-none text-white text-3xl ">uzņēmumiem</span>
                </h2>
                <button
@@ -410,24 +411,24 @@
    </div>
    <!-- for companies END -->
    <!-- partners -->
-   <div class="bg-white py-20">
-      <div class="flex flex-wrap justify-center  gap-10 mx-auto max-w-5xl">
-         <div class="h-8 sm:h-16 aspect-[16/6] flex items-center">
+   <div class="bg-white py-8">
+      <div class="flex flex-wrap justify-center  gap-8 mx-auto max-w-5xl">
+         <div class="h-7 sm:h-10 aspect-[16/6] flex items-center">
             <img src="src/images/tonybet.png.webp" />
          </div>
-         <div class="h-8 sm:h-16   aspect-[16/6] flex items-center">
+         <div class="h-7 sm:h-10   aspect-[16/6] flex items-center">
             <img src="src/images/l-1.png" />
          </div>
-         <div class="h-8 sm:h-16  aspect-[16/6] flex items-center">
+         <div class="h-7 sm:h-10  aspect-[16/6] flex items-center">
             <img src="src/images/l-3.png" />
          </div>
-         <div class="h-8 sm:h-16  aspect-[16/6] flex items-center">
+         <div class="h-7 sm:h-10  aspect-[16/6] flex items-center">
             <img src="src/images/l-2.png" />
          </div>
-         <div class="h-8 sm:h-16  aspect-[16/6] flex items-center">
+         <div class="h-7 sm:h-10  aspect-[16/6] flex items-center">
             <img src="src/images/l-4.png" />
          </div>
-         <div class="h-8 sm:h-16   aspect-[16/6] flex items-center">
+         <div class="h-7 sm:h-10   aspect-[16/6] flex items-center">
             <img src="src/images/tonybet.png.webp" />
          </div>
       </div>
@@ -435,10 +436,10 @@
    <!-- partners END -->
    <!-- footer -->
    <footer>
-      <div class="bg-gradient-to-b from-white to-neutral-1 w-full py-10">
+      <div class="bg-gradient-to-b from-white to-neutral-1 w-full py-8">
          <div class="container mx-auto px-4">
-            <div class="flex justify-center mb-3">
-               <img src="src/images/logo.svg" alt="Logo" class="h-12" />
+            <div class="flex justify-center mb-4">
+               <img src="src/images/logo.svg" alt="Logo" class="h-7 sm:h-10" />
             </div>
             <div class="flex justify-center mb-6">
                <address class="not-italic text-center font-medium">
@@ -448,8 +449,8 @@
                </address>
             </div>
             <div class="flex justify-center mb-6 space-x-4">
-               <a href="#"><img src="src/images/app-store.svg" alt="Apple Store" class="h-10" /></a>
-               <a href="#"><img src="src/images/google-play.svg" alt="Google Play" class="h-10" /></a>
+               <a href="#"><img src="src/images/app-store.svg" alt="Apple Store" class="h-8" /></a>
+               <a href="#"><img src="src/images/google-play.svg" alt="Google Play" class="h-8" /></a>
             </div>
             <div class="flex flex-wrap justify-center mb-6 gap-5 uppercase">
                <a href="#" class="text-primary hover:underline font-medium"> Uzņēmumiem </a>
@@ -458,8 +459,8 @@
                <a href="#" class="text-primary hover:underline font-medium">App Privacy Details</a>
             </div>
             <div class="flex justify-center space-x-4">
-               <a href="#"><img src="src/images/fb.svg" alt="Facebook" class="h-8" /></a>
-               <a href="#"><img src="src/images/ln.svg" alt="LinkedIn" class="h-8" /></a>
+               <a href="#"><img src="src/images/fb.svg" alt="Facebook" class="h-6" /></a>
+               <a href="#"><img src="src/images/ln.svg" alt="LinkedIn" class="h-6" /></a>
             </div>
          </div>
       </div>
@@ -478,7 +479,7 @@
    <!-- footer END -->
    <!-- menu -->
    <div id="menu"
-      class="bg-gradient-to-b from-color-brand-lightest to-white fixed top-0 left-0 right-0 bottom-0 z-50 transform -translate-y-full transition-transform duration-300 ease-in-out p-4 md:p-10">
+      class="bg-gradient-to-b from-brand-lightest to-white fixed top-0 left-0 right-0 bottom-0 z-50 transform -translate-y-full transition-transform duration-300 ease-in-out p-4 md:p-10">
       <div class="flex justify-between items-center ">
          <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">LOLO</span>
