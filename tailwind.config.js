@@ -4,7 +4,7 @@ const svgToDataUri = require("mini-svg-data-uri")
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
-    /* šis nav vajadzīgs vai jāņem ārā, jo to zemāk atslēdz 
+    /* šis nav vajadzīgs vai jāņem ārā, jo to zemāk atslēdz, bet iespējams, ka tev kodā jāsameklē aspect klases, jo tās tad tev jāņem ārā.
     aspectRatio: {
       auto: "auto",
       square: "1 / 1",
@@ -135,7 +135,7 @@ module.exports = {
     },
   },
   corePlugins: {
-    // aspectRatio: false, // šis ir kaitīgs, jo izslēdz aspectRatio un mans dizains vairāk nestrādā
+    // aspectRatio: false, // ar šo, ja izslēdz aspectRatio un mans dizains vairāk nestrādā
   },
   plugins: [
     plugin(function ({ addVariant }) {
@@ -148,7 +148,7 @@ module.exports = {
         // ":merge(html.browser) &"
       ])
     }),
-    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/aspect-ratio"),  // manuprat arī lieks
     require("@tailwindcss/forms")({
       strategy: "class",
     }),

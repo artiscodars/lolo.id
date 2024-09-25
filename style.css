@@ -617,6 +617,9 @@ video {
 .mb-3 {
   margin-bottom: 12px;
 }
+.mb-4 {
+  margin-bottom: 16px;
+}
 .mb-5 {
   margin-bottom: 20px;
 }
@@ -638,23 +641,11 @@ video {
 .mt-10 {
   margin-top: 64px;
 }
-.mt-16 {
-  margin-top: 216px;
-}
 .mt-4 {
   margin-top: 16px;
 }
 .mt-5 {
   margin-top: 20px;
-}
-.mt-8 {
-  margin-top: 40px;
-}
-.mt-9 {
-  margin-top: 48px;
-}
-.mb-4 {
-  margin-bottom: 16px;
 }
 .block {
   display: block;
@@ -674,38 +665,23 @@ video {
 .hidden {
   display: none;
 }
+.aspect-1 {
+  aspect-ratio: 1;
+}
 .aspect-\[1\/1\] {
   aspect-ratio: 1/1;
 }
 .aspect-\[16\/6\] {
   aspect-ratio: 16/6;
 }
+.aspect-\[16\/9\] {
+  aspect-ratio: 16/9;
+}
 .aspect-\[3\/4\] {
   aspect-ratio: 3/4;
 }
 .aspect-\[9\/12\] {
   aspect-ratio: 9/12;
-}
-.aspect-\[4\/3\] {
-  aspect-ratio: 4/3;
-}
-.aspect-\[4\/2\] {
-  aspect-ratio: 4/2;
-}
-.aspect-\[19\/9\] {
-  aspect-ratio: 19/9;
-}
-.aspect-\[16\/9\] {
-  aspect-ratio: 16/9;
-}
-.aspect-1 {
-  aspect-ratio: 1;
-}
-.h-10 {
-  height: 64px;
-}
-.h-12 {
-  height: 96px;
 }
 .h-5 {
   height: 20px;
@@ -718,6 +694,9 @@ video {
 }
 .h-8 {
   height: 40px;
+}
+.h-9 {
+  height: 48px;
 }
 .h-\[15px\] {
   height: 15px;
@@ -742,12 +721,6 @@ video {
 }
 .h-full {
   height: 100%;
-}
-.h-9 {
-  height: 48px;
-}
-.h-80 {
-  height: 20rem;
 }
 .min-h-0 {
   min-height: 0px;
@@ -870,9 +843,6 @@ video {
 }
 .gap-y-1 {
   row-gap: 4px;
-}
-.gap-y-12 {
-  row-gap: 96px;
 }
 .gap-y-8 {
   row-gap: 40px;
@@ -1019,17 +989,9 @@ video {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 .py-3 {
   padding-top: 12px;
   padding-bottom: 12px;
-}
-.py-15 {
-  padding-top: 160px;
-  padding-bottom: 160px;
 }
 .py-8 {
   padding-top: 40px;
@@ -2052,20 +2014,12 @@ button.swiper-pagination-bullet {
     height: 96px;
   }
 
-  .sm\:h-16 {
-    height: 216px;
+  .sm\:h-8 {
+    height: 40px;
   }
 
   .sm\:h-\[20px\] {
     height: 20px;
-  }
-
-  .sm\:h-11 {
-    height: 72px;
-  }
-
-  .sm\:h-8 {
-    height: 40px;
   }
 
   .sm\:min-h-\[350px\] {
@@ -2162,10 +2116,6 @@ button.swiper-pagination-bullet {
 
   .sm\:pt-0 {
     padding-top: 0px;
-  }
-
-  .sm\:pt-10 {
-    padding-top: 64px;
   }
 
   .sm\:pt-5 {
